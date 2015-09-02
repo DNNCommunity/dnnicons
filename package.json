@@ -1,0 +1,12 @@
+{
+  "name": "DNNIcons",
+  "version": "0.1.0",
+  "author": "Joe Brinkman",
+  "private": true,
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.13.0",
+    "grunt-svgmin": "^2.0.1",
+    "grunt-webfont": "^0.5.4"
+  }
+}
