@@ -24,6 +24,45 @@
 
 <p>DNN contains hundreds of different icons used throughout the platform.  The DNN Icons project contains commonly used DNN icons in an easy to use format which also helps improve overall page speed.  If you have ever used a icon font like FontAwesome or GlyphIcons, then you already know how to use DNNIcons.</p>
 
+		<h3>Icons</h3>
+
+		<div class="icons" id="icons">
+			
+				<div class="icons__item" data-name="arrows"><i class="dnni dnni-arrows"></i> arrows</div>
+			
+				<div class="icons__item" data-name="caret-down"><i class="dnni dnni-caret-down"></i> caret-down</div>
+			
+				<div class="icons__item" data-name="caret-left"><i class="dnni dnni-caret-left"></i> caret-left</div>
+			
+				<div class="icons__item" data-name="caret-right"><i class="dnni dnni-caret-right"></i> caret-right</div>
+			
+				<div class="icons__item" data-name="caret-up"><i class="dnni dnni-caret-up"></i> caret-up</div>
+			
+				<div class="icons__item" data-name="check-square-o"><i class="dnni dnni-check-square-o"></i> check-square-o</div>
+			
+				<div class="icons__item" data-name="check"><i class="dnni dnni-check"></i> check</div>
+			
+				<div class="icons__item" data-name="cog"><i class="dnni dnni-cog"></i> cog</div>
+			
+				<div class="icons__item" data-name="cogs"><i class="dnni dnni-cogs"></i> cogs</div>
+			
+				<div class="icons__item" data-name="exclamation"><i class="dnni dnni-exclamation"></i> exclamation</div>
+			
+				<div class="icons__item" data-name="home"><i class="dnni dnni-home"></i> home</div>
+			
+				<div class="icons__item" data-name="pencil"><i class="dnni dnni-pencil"></i> pencil</div>
+			
+				<div class="icons__item" data-name="search"><i class="dnni dnni-search"></i> search</div>
+			
+				<div class="icons__item" data-name="square-o"><i class="dnni dnni-square-o"></i> square-o</div>
+			
+				<div class="icons__item" data-name="trash-o"><i class="dnni dnni-trash-o"></i> trash-o</div>
+			
+		</div>
+
+		<h3>Usage</h3>
+		<pre><code>&lt;i class=&quot;dnni dnni-<span id="name">name</span>&quot;&gt;&lt;/i&gt;</code></pre>
+
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/DNNCommunity/dnnicons">Dnn Icons</a> is maintained by <a href="https://github.com/DNNCommunity">DNNCommunity</a>.</span>
 
@@ -31,6 +70,17 @@
       </footer>
 
     </section>
+
+		<script>
+		(function() {
+			document.getElementById('icons').onclick = function(e) {
+				e = e || window.event;
+				var name = e.target.getAttribute('data-name') || e.target.parentNode.getAttribute('data-name');
+				document.getElementById('name').innerHTML = name;
+				document.getElementById('name2').innerHTML = name;
+			}
+		})();
+		</script>
 
   
   </body>
