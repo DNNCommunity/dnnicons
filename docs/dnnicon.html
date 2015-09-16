@@ -56,11 +56,11 @@
 
 @font-face {
 	font-family:"dnnicon";
-	src:url("../fonts/dnnicon.eot?c1e3a25ff137389bcc5ec7eaea9595c6");
+	src:url("../fonts/dnnicon.eot?24b84d60b2f98e4aac41077eceb696b9");
 	src:url("../fonts/dnnicon.eot?#iefix") format("embedded-opentype"),
-		url("../fonts/dnnicon.woff?c1e3a25ff137389bcc5ec7eaea9595c6") format("woff"),
-		url("../fonts/dnnicon.ttf?c1e3a25ff137389bcc5ec7eaea9595c6") format("truetype"),
-		url("../fonts/dnnicon.svg?c1e3a25ff137389bcc5ec7eaea9595c6#dnnicon") format("svg");
+		url("../fonts/dnnicon.woff?24b84d60b2f98e4aac41077eceb696b9") format("woff"),
+		url("../fonts/dnnicon.ttf?24b84d60b2f98e4aac41077eceb696b9") format("truetype"),
+		url("../fonts/dnnicon.svg?24b84d60b2f98e4aac41077eceb696b9#dnnicon") format("svg");
 	font-weight:normal;
 	font-style:normal;
 }
@@ -84,78 +84,148 @@
 /* Icons */
 
 
-.dnni-arrows:before {
+.dnni-arrow-down:before {
 	content:"\f101";
 }
 
 
-.dnni-caret-down:before {
+.dnni-arrow-left:before {
 	content:"\f102";
 }
 
 
-.dnni-caret-left:before {
+.dnni-arrow-right:before {
 	content:"\f103";
 }
 
 
-.dnni-caret-right:before {
+.dnni-arrow-square-down:before {
 	content:"\f104";
 }
 
 
-.dnni-caret-up:before {
+.dnni-arrow-square-up:before {
 	content:"\f105";
 }
 
 
-.dnni-check-square-o:before {
+.dnni-arrow-up:before {
 	content:"\f106";
 }
 
 
-.dnni-check:before {
+.dnni-arrows:before {
 	content:"\f107";
 }
 
 
-.dnni-cog:before {
+.dnni-caret-down:before {
 	content:"\f108";
 }
 
 
-.dnni-cogs:before {
+.dnni-caret-left:before {
 	content:"\f109";
 }
 
 
-.dnni-exclamation:before {
+.dnni-caret-right:before {
 	content:"\f10a";
 }
 
 
-.dnni-home:before {
+.dnni-caret-up:before {
 	content:"\f10b";
 }
 
 
-.dnni-pencil:before {
+.dnni-check-square-o:before {
 	content:"\f10c";
 }
 
 
-.dnni-search:before {
+.dnni-check:before {
 	content:"\f10d";
 }
 
 
-.dnni-square-o:before {
+.dnni-cloud-down:before {
 	content:"\f10e";
 }
 
 
-.dnni-trash-o:before {
+.dnni-cloud-up:before {
 	content:"\f10f";
+}
+
+
+.dnni-cog:before {
+	content:"\f110";
+}
+
+
+.dnni-cogs:before {
+	content:"\f111";
+}
+
+
+.dnni-exclamation:before {
+	content:"\f112";
+}
+
+
+.dnni-home:before {
+	content:"\f113";
+}
+
+
+.dnni-info-circle:before {
+	content:"\f114";
+}
+
+
+.dnni-pencil:before {
+	content:"\f115";
+}
+
+
+.dnni-print:before {
+	content:"\f116";
+}
+
+
+.dnni-refresh:before {
+	content:"\f117";
+}
+
+
+.dnni-remove:before {
+	content:"\f118";
+}
+
+
+.dnni-rss:before {
+	content:"\f119";
+}
+
+
+.dnni-search:before {
+	content:"\f11a";
+}
+
+
+.dnni-source:before {
+	content:"\f11b";
+}
+
+
+.dnni-square-o:before {
+	content:"\f11c";
+}
+
+
+.dnni-trash-o:before {
+	content:"\f11d";
 }
 
 		</style>
@@ -164,6 +234,18 @@
 		<h1>dnnicon</h1>
 
 		<div class="icons" id="icons">
+			
+				<div class="icons__item" data-name="arrow-down"><i class="dnni dnni-arrow-down"></i> arrow-down</div>
+			
+				<div class="icons__item" data-name="arrow-left"><i class="dnni dnni-arrow-left"></i> arrow-left</div>
+			
+				<div class="icons__item" data-name="arrow-right"><i class="dnni dnni-arrow-right"></i> arrow-right</div>
+			
+				<div class="icons__item" data-name="arrow-square-down"><i class="dnni dnni-arrow-square-down"></i> arrow-square-down</div>
+			
+				<div class="icons__item" data-name="arrow-square-up"><i class="dnni dnni-arrow-square-up"></i> arrow-square-up</div>
+			
+				<div class="icons__item" data-name="arrow-up"><i class="dnni dnni-arrow-up"></i> arrow-up</div>
 			
 				<div class="icons__item" data-name="arrows"><i class="dnni dnni-arrows"></i> arrows</div>
 			
@@ -179,6 +261,10 @@
 			
 				<div class="icons__item" data-name="check"><i class="dnni dnni-check"></i> check</div>
 			
+				<div class="icons__item" data-name="cloud-down"><i class="dnni dnni-cloud-down"></i> cloud-down</div>
+			
+				<div class="icons__item" data-name="cloud-up"><i class="dnni dnni-cloud-up"></i> cloud-up</div>
+			
 				<div class="icons__item" data-name="cog"><i class="dnni dnni-cog"></i> cog</div>
 			
 				<div class="icons__item" data-name="cogs"><i class="dnni dnni-cogs"></i> cogs</div>
@@ -187,9 +273,21 @@
 			
 				<div class="icons__item" data-name="home"><i class="dnni dnni-home"></i> home</div>
 			
+				<div class="icons__item" data-name="info-circle"><i class="dnni dnni-info-circle"></i> info-circle</div>
+			
 				<div class="icons__item" data-name="pencil"><i class="dnni dnni-pencil"></i> pencil</div>
 			
+				<div class="icons__item" data-name="print"><i class="dnni dnni-print"></i> print</div>
+			
+				<div class="icons__item" data-name="refresh"><i class="dnni dnni-refresh"></i> refresh</div>
+			
+				<div class="icons__item" data-name="remove"><i class="dnni dnni-remove"></i> remove</div>
+			
+				<div class="icons__item" data-name="rss"><i class="dnni dnni-rss"></i> rss</div>
+			
 				<div class="icons__item" data-name="search"><i class="dnni dnni-search"></i> search</div>
+			
+				<div class="icons__item" data-name="source"><i class="dnni dnni-source"></i> source</div>
 			
 				<div class="icons__item" data-name="square-o"><i class="dnni dnni-square-o"></i> square-o</div>
 			
